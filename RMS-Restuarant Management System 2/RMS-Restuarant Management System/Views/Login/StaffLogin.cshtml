@@ -1,0 +1,191 @@
+﻿@model RMS_Restuarant_Management_System.Models.LoginStaff
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <script type="text/javascript">
+        window.onload = window.history.forward(0);  //calling function on window onload
+    </script>
+    <style>
+        body {
+            margin: 0;
+            color: #6a6f8c;
+            background-image: url("../Picture's/38745652-restaurant-wallpapers.jpg");
+            font: 600 16px/18px 'Open Sans',sans-serif;
+        }
+
+        *, :after, :before {
+            box-sizing: border-box;
+        }
+
+        .clearfix:after, .clearfix:before {
+            content: '';
+            display: table;
+        }
+
+        .clearfix:after {
+            clear: both;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .login-wrap {
+            width: 100%;
+            margin: auto;
+            max-width: 525px;
+            min-height: 670px;
+            position: relative;
+            box-shadow: 0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+        }
+
+        .login-html {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            padding: 90px 70px 50px 70px;
+            background: rgba(40,57,101,.9);
+        }
+
+            .login-html .sign-in-htm,
+            .login-html .sign-up-htm {
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                position: absolute;
+                -webkit-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                -webkit-transition: all .4s linear;
+                transition: all .4s linear;
+            }
+
+            .login-html .sign-in,
+            .login-html .sign-up,
+            .login-form .group .check {
+                display: none;
+            }
+
+            .login-html .tab,
+            .login-form .group .label,
+            .login-form .group .button {
+                text-transform: uppercase;
+            }
+
+            .login-html .tab {
+                font-size: 22px;
+                margin-right: 15px;
+                padding-bottom: 5px;
+                margin: 0 15px 10px 0;
+                display: inline-block;
+                border-bottom: 2px solid transparent;
+            }
+
+            .login-html .sign-in:checked + .tab,
+            .login-html .sign-up:checked + .tab {
+                color: #fff;
+                border-color: #1161ee;
+            }
+
+        .control-labelcol-md-2 {
+            color: palegreen;
+            font-family: 'Berlin Sans FB';
+            font-size: x-large;
+            text-decoration: underline;
+            position: absolute;
+            margin-left: 40px;
+        }
+
+        .col-md-10 {
+            font-family: 'Berlin Sans FB';
+            margin-left: 170px;
+        }
+
+        #btn {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 30px 30px;
+            width: 200px;
+            margin-left: 100px;
+        }
+
+            #btn:hover {
+                background-color: white;
+                color: black;
+                border: 2px solid #4CAF50;
+            }
+
+        .link {
+            margin-left: 130px;
+            margin-top: 200px;
+        }
+
+        .form-horizontal {
+            color: palegreen;
+            font-size: x-large;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width" />
+    <title>AdminLogin</title>
+</head>
+<body>
+    <div class="login-wrap">
+        <div class="login-html">
+            @using (Html.BeginForm())
+            { @Html.AntiForgeryToken()
+                <div class="form-horizontal">
+                    <center><h4>LOGIN AS STAFF</h4></center>
+                    <hr />
+                    @Html.ValidationSummary(true)
+
+                    <div class="form-group">
+                        <br />
+                        @Html.LabelFor(model => model.Staff_ID, new { @class = "control-labelcol-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Staff_ID)<br />
+                            @Html.ValidationMessageFor(model => model.Staff_ID)<br />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <br />
+                        @Html.LabelFor(model => model.Password, new { @class = "control-labelcol-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Password)<br />
+                            @Html.ValidationMessageFor(model => model.Password)<br />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2col-md-10">
+                            <input id="btn" type="submit" value="Login" class="btn btn-default" />
+                        </div>
+                    </div>
+                </div>
+            }
+            <div class="link">
+                @Html.ActionLink("Back to Category", "Category", null, new { style = "color:yellow" })
+            </div><hr />
+        </div>
+    </div>
+</body>
+</html>

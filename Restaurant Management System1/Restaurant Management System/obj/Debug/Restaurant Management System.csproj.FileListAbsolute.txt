@@ -1,0 +1,36 @@
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\Restaurant Management System\Restaurant Management System\bin\Restaurant Management System.dll.config
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\Restaurant Management System\Restaurant Management System\bin\Restaurant Management System.dll
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\Restaurant Management System\Restaurant Management System\bin\Restaurant Management System.pdb
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\Restaurant Management System\Restaurant Management System\bin\System.Web.Helpers.dll
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\Restaurant Management System\Restaurant Management System\bin\System.Web.Mvc.dll
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\Restaurant Management System\Restaurant Management System\bin\System.Web.Razor.dll
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\Restaurant Management System\Restaurant Management System\bin\System.Web.Webpages.Deployment.dll
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\Restaurant Management System\Restaurant Management System\bin\System.Web.Webpages.dll
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\Restaurant Management System\Restaurant Management System\bin\System.Web.Webpages.Razor.dll
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\Restaurant Management System\Restaurant Management System\bin\System.Web.Razor.xml
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\Restaurant Management System\Restaurant Management System\bin\System.Web.Webpages.xml
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\Restaurant Management System\Restaurant Management System\bin\System.Web.Webpages.Deployment.xml
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\Restaurant Management System\Restaurant Management System\bin\System.Web.Webpages.Razor.xml
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\Restaurant Management System\Restaurant Management System\bin\System.Web.Helpers.xml
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\Restaurant Management System\Restaurant Management System\bin\System.Web.Mvc.xml
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant Management System.csprojResolveAssemblyReference.cache
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant Management System.dll
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant Management System.pdb
+D:\Database Management System\Restaurant Management System\Restaurant Management System\bin\Restaurant Management System.dll.config
+D:\Database Management System\Restaurant Management System\Restaurant Management System\bin\Restaurant Management System.dll
+D:\Database Management System\Restaurant Management System\Restaurant Management System\bin\Restaurant Management System.pdb
+D:\Database Management System\Restaurant Management System\Restaurant Management System\bin\System.Web.Helpers.dll
+D:\Database Management System\Restaurant Management System\Restaurant Management System\bin\System.Web.Mvc.dll
+D:\Database Management System\Restaurant Management System\Restaurant Management System\bin\System.Web.Razor.dll
+D:\Database Management System\Restaurant Management System\Restaurant Management System\bin\System.Web.Webpages.Deployment.dll
+D:\Database Management System\Restaurant Management System\Restaurant Management System\bin\System.Web.Webpages.dll
+D:\Database Management System\Restaurant Management System\Restaurant Management System\bin\System.Web.Webpages.Razor.dll
+D:\Database Management System\Restaurant Management System\Restaurant Management System\bin\System.Web.Razor.xml
+D:\Database Management System\Restaurant Management System\Restaurant Management System\bin\System.Web.Webpages.xml
+D:\Database Management System\Restaurant Management System\Restaurant Management System\bin\System.Web.Webpages.Deployment.xml
+D:\Database Management System\Restaurant Management System\Restaurant Management System\bin\System.Web.Webpages.Razor.xml
+D:\Database Management System\Restaurant Management System\Restaurant Management System\bin\System.Web.Helpers.xml
+D:\Database Management System\Restaurant Management System\Restaurant Management System\bin\System.Web.Mvc.xml
+D:\Database Management System\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant Management System.csprojResolveAssemblyReference.cache
+D:\Database Management System\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant Management System.dll
+D:\Database Management System\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant Management System.pdb

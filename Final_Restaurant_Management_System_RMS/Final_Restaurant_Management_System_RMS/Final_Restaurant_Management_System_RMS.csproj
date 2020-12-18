@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8475F524-0E5C-418D-A213-1A78AE84FD24}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Final_Restaurant_Management_System_RMS</RootNamespace>
+    <AssemblyName>Final_Restaurant_Management_System_RMS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.0.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.0.0\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.0.0\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.0.0\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.0.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.0.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Images\93.jpg" />
+    <Content Include="Images\94.jpg" />
+    <Content Include="Images\95.jpg" />
+    <Content Include="Images\96.jpg" />
+    <Content Include="Images\97.jpg" />
+    <Content Include="Images\98.jpg" />
+    <Content Include="Images\99.jpg" />
+    <Content Include="Knight\fonts\fontawesome-webfont.eot" />
+    <Content Include="Knight\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Knight\fonts\fontawesome-webfont.woff" />
+    <Content Include="Knight\fonts\FontAwesome.otf" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\2.jpg" />
+    <Content Include="Images\3.jpg" />
+    <Content Include="Images\4.jpg" />
+    <Content Include="Images\5.jpg" />
+    <Content Include="Images\6.jpg" />
+    <Content Include="Images\7.jpg" />
+    <Content Include="Images\coollogo_com-4020849.gif" />
+    <Content Include="Knight\contactform\readme.txt" />
+    <Content Include="Knight\css\animate.css" />
+    <Content Include="Knight\css\bootstrap.css" />
+    <Content Include="Knight\css\font-awesome.css" />
+    <Content Include="Knight\css\responsive.css" />
+    <Content Include="Knight\css\style.css" />
+    <Content Include="Knight\favicon.ico" />
+    <Content Include="Knight\favicon.png" />
+    <Content Include="Knight\fonts\fontawesome-webfont.svg" />
+    <Content Include="Knight\img\3.jpg" />
+    <Content Include="Knight\img\bg-map.png" />
+    <Content Include="Knight\img\c-liogo1.png" />
+    <Content Include="Knight\img\c-liogo2.png" />
+    <Content Include="Knight\img\c-liogo3.png" />
+    <Content Include="Knight\img\c-liogo4.png" />
+    <Content Include="Knight\img\c-liogo5.png" />
+    <Content Include="Knight\img\client-pic1.jpg" />
+    <Content Include="Knight\img\footer-logo.png" />
+    <Content Include="Knight\img\glyphicons-halflings-white.png" />
+    <Content Include="Knight\img\glyphicons-halflings.png" />
+    <Content Include="Knight\img\imac.png" />
+    <Content Include="Knight\img\iPad.png" />
+    <Content Include="Knight\img\iphone.png" />
+    <Content Include="Knight\img\list-style.png" />
+    <Content Include="Knight\img\Logo.ico" />
+    <Content Include="Knight\img\logo.png" />
+    <Content Include="Knight\img\logo66.png" />
+    <Content Include="Knight\img\macbook-pro.png" />
+    <Content Include="Knight\img\Portfolio-pic1.jpg" />
+    <Content Include="Knight\img\Portfolio-pic2.jpg" />
+    <Content Include="Knight\img\Portfolio-pic3.jpg" />
+    <Content Include="Knight\img\Portfolio-pic4.jpg" />
+    <Content Include="Knight\img\Portfolio-pic5.jpg" />
+    <Content Include="Knight\img\Portfolio-pic6.jpg" />
+    <Content Include="Knight\img\pw_maze_black.png" />
+    <Content Include="Knight\img\pw_maze_black_2X.png" />
+    <Content Include="Knight\img\res_nav_click.png" />
+    <Content Include="Knight\img\section-bg1.jpg" />
+    <Content Include="Knight\img\section-bg2.jpg" />
+    <Content Include="Knight\img\small-logo.png" />
+    <Content Include="Knight\img\team-leader-pic1.jpg" />
+    <Content Include="Knight\img\team-leader-pic2.jpg" />
+    <Content Include="Knight\img\team-leader-pic3.jpg" />
+    <Content Include="Knight\img\wp.png" />
+    <Content Include="Knight\index.html" />
+    <Content Include="Knight\js\bootstrap.js" />
+    <Content Include="Knight\js\classie.js" />
+    <Content Include="Knight\js\html5element.js" />
+    <Content Include="Knight\js\html5shiv.js" />
+    <Content Include="Knight\js\jquery-scrolltofixed.js" />
+    <Content Include="Knight\js\jquery.1.8.3.min.js" />
+    <Content Include="Knight\js\jquery.easing.1.3.js" />
+    <Content Include="Knight\js\jquery.isotope.js" />
+    <Content Include="Knight\js\respond-1.1.0.min.js" />
+    <Content Include="Knight\js\wow.js" />
+    <Content Include="MainSlider\data1\images\1.jpg" />
+    <Content Include="MainSlider\data1\images\3.jpg" />
+    <Content Include="MainSlider\data1\images\6.jpg" />
+    <Content Include="MainSlider\data1\images\96.jpg" />
+    <Content Include="MainSlider\data1\images\97.jpg" />
+    <Content Include="MainSlider\data1\images\sectionbg1.jpg" />
+    <Content Include="MainSlider\data1\tooltips\1.jpg" />
+    <Content Include="MainSlider\data1\tooltips\3.jpg" />
+    <Content Include="MainSlider\data1\tooltips\6.jpg" />
+    <Content Include="MainSlider\data1\tooltips\96.jpg" />
+    <Content Include="MainSlider\data1\tooltips\97.jpg" />
+    <Content Include="MainSlider\data1\tooltips\sectionbg1.jpg" />
+    <Content Include="MainSlider\engine1\jquery.js" />
+    <Content Include="MainSlider\engine1\script.js" />
+    <Content Include="MainSlider\engine1\style.css" />
+    <Content Include="MainSlider\engine1\style.mod.css" />
+    <Content Include="MainSlider\engine1\wowslider.js" />
+    <Content Include="MainSlider\engine1\wowslider.mod.js" />
+    <Content Include="MainSlider\wowslider-howto.html" />
+    <Content Include="MainSlider\wowslider-iframe.html" />
+    <Content Include="MainSlider\wowslider.html" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Login\Category.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\Deal_ModuleController.cs" />
+    <Compile Include="Controllers\Delete_Staff_RegistrationController.cs" />
+    <Compile Include="Controllers\Guest_Deal_ListController.cs" />
+    <Compile Include="Controllers\Guest_Info_ListController.cs" />
+    <Compile Include="Controllers\Guest_Menu_ListController.cs" />
+    <Compile Include="Controllers\Guest_Table_Reservation_ListController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\Menu_ModuleController.cs" />
+    <Compile Include="Controllers\Order_ListController.cs" />
+    <Compile Include="Controllers\Staff_Deal_ModuleController.cs" />
+    <Compile Include="Controllers\Staff_Menu_ModuleController.cs" />
+    <Compile Include="Controllers\Staff_Order_ListController.cs" />
+    <Compile Include="Controllers\Staff_RegistrationController.cs" />
+    <Compile Include="Controllers\Staff_Table_ReservationController.cs" />
+    <Compile Include="Controllers\Staff_Vegetable_StockController.cs" />
+    <Compile Include="Controllers\Table_ReservationController.cs" />
+    <Compile Include="Controllers\Vegetable_StockController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Deal_Module.cs" />
+    <Compile Include="Models\Delete_Staff_Info.cs" />
+    <Compile Include="Models\Guest_Deal_List.cs" />
+    <Compile Include="Models\Guest_List.cs" />
+    <Compile Include="Models\Guest_Menu_List.cs" />
+    <Compile Include="Models\Guest_Table_Reservation_List.cs" />
+    <Compile Include="Models\Login.cs" />
+    <Compile Include="Models\Menu_Module.cs" />
+    <Compile Include="Models\Order_List.cs" />
+    <Compile Include="Models\Staff_Deal_Module.cs" />
+    <Compile Include="Models\Staff_Menu_Module.cs" />
+    <Compile Include="Models\Staff_Order_List.cs" />
+    <Compile Include="Models\Staff_Registration.cs" />
+    <Compile Include="Models\Staff_Table_Reservation.cs" />
+    <Compile Include="Models\Staff_Vegetable_Stock.cs" />
+    <Compile Include="Models\Table_Reservation.cs" />
+    <Compile Include="Models\Vegetable_Stock.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Views\Login\AdminLogin.cshtml" />
+    <Content Include="Views\Login\StaffLogin.cshtml" />
+    <Content Include="Views\Staff_Registration\InsertStaff.cshtml" />
+    <Content Include="Views\Staff_Registration\GetAllStaff_List.cshtml" />
+    <Content Include="Views\Staff_Registration\GetAllStaff_ListBYIDs.cshtml" />
+    <Content Include="Views\Login\LoginGuest.cshtml" />
+    <Content Include="Views\Login\AdminMainPage.cshtml" />
+    <Content Include="Views\Login\StaffMainPage.cshtml" />
+    <Content Include="Views\Login\GuestMainPage.cshtml" />
+    <Content Include="Views\Menu_Module\InsertMenu_Module.cshtml" />
+    <Content Include="Views\Menu_Module\GetAllMenu_Module_List.cshtml" />
+    <Content Include="Views\Menu_Module\GetAllMenu_Module_ListBYIDs.cshtml" />
+    <Content Include="Views\Menu_Module\UpdateAllMenu_Module_ListBYIDs.cshtml" />
+    <Content Include="Views\Menu_Module\DeleteAllMenu_Module_ListBYIDs.cshtml" />
+    <Content Include="Views\Deal_Module\InsertDeal_Module.cshtml" />
+    <Content Include="Views\Deal_Module\GetAllDeal_Module_ListBYIDs.cshtml" />
+    <Content Include="Views\Deal_Module\UpdateAllDeal_Module_ListBYIDs.cshtml" />
+    <Content Include="Views\Deal_Module\GetAllDeal_Module_List.cshtml" />
+    <Content Include="Views\Table_Reservation\InsertTable_Reservation.cshtml" />
+    <Content Include="Views\Table_Reservation\GetAllTable_Reservation_List.cshtml" />
+    <Content Include="Views\Table_Reservation\GetAllTable_Reservation_ListBYIDs.cshtml" />
+    <Content Include="Views\Table_Reservation\UpdateAllTable_Reservation_ListBYIDs.cshtml" />
+    <Content Include="Views\Table_Reservation\DeleteAllTable_Reservation_ListBYIDs.cshtml" />
+    <Content Include="Views\Vegetable_Stock\GetAllVegetable_Stock_List.cshtml" />
+    <Content Include="Views\Vegetable_Stock\GetAllVegetable_Stock_ListBYIDs.cshtml" />
+    <Content Include="Views\Vegetable_Stock\UpdateAllVegetable_Stock_ListBYIDs.cshtml" />
+    <Content Include="Views\Guest_Info_List\GetAllGuest_List.cshtml" />
+    <Content Include="Views\Order_List\InsertOrder.cshtml" />
+    <Content Include="Views\Order_List\GetAllOrder_List.cshtml" />
+    <Content Include="Views\Order_List\GetAllOrder_ListBYIDs.cshtml" />
+    <Content Include="Views\Order_List\UpdateAllOrder_ListBYIDs.cshtml" />
+    <Content Include="Views\Deal_Module\DeleteAllDeal_Module_ListBYIDs.cshtml" />
+    <Content Include="Views\Guest_Menu_List\GetGuestMenu_Module_List.cshtml" />
+    <Content Include="Views\Guest_Deal_List\Deal_Module_List.cshtml" />
+    <Content Include="Views\Staff_Menu_Module\InsertMenu_Module.cshtml" />
+    <Content Include="Views\Staff_Menu_Module\GetAllMenu_Module_List.cshtml" />
+    <Content Include="Views\Staff_Menu_Module\GetAllMenu_Module_ListBYIDs.cshtml" />
+    <Content Include="Views\Staff_Menu_Module\UpdateAllMenu_Module_ListBYIDs.cshtml" />
+    <Content Include="Views\Staff_Menu_Module\DeleteAllMenu_Module_ListBYIDs.cshtml" />
+    <Content Include="Views\Staff_Deal_Module\InsertDeal_Module.cshtml" />
+    <Content Include="Views\Staff_Deal_Module\GetAllDeal_Module_List.cshtml" />
+    <Content Include="Views\Staff_Deal_Module\GetAllDeal_Module_ListBYIDs.cshtml" />
+    <Content Include="Views\Staff_Deal_Module\UpdateAllDeal_Module_ListBYIDs.cshtml" />
+    <Content Include="Views\Staff_Deal_Module\DeleteAllDeal_Module_ListBYIDs.cshtml" />
+    <Content Include="Views\Staff_Order_List\InsertOrder.cshtml" />
+    <Content Include="Views\Staff_Order_List\GetAllOrder_List.cshtml" />
+    <Content Include="Views\Staff_Order_List\GetAllOrder_ListBYIDs.cshtml" />
+    <Content Include="Views\Staff_Order_List\UpdateAllOrder_ListBYIDs.cshtml" />
+    <Content Include="Views\Staff_Vegetable_Stock\GetAllVegetable_Stock_List.cshtml" />
+    <Content Include="Views\Staff_Vegetable_Stock\GetAllVegetable_Stock_ListBYIDs.cshtml" />
+    <Content Include="Views\Guest_Table_Reservation_List\GetAllTable_ReservationList.cshtml" />
+    <Content Include="Views\Staff_Registration\UpdateAllStaff_ListBYIDs.cshtml" />
+    <Content Include="Views\Staff_Vegetable_Stock\UpdateAllVegetable_Stock_ListBYIDs.cshtml" />
+    <Content Include="Views\Staff_Table_Reservation\InsertTable_Reservation.cshtml" />
+    <Content Include="Views\Staff_Table_Reservation\GetAllTable_Reservation_List.cshtml" />
+    <Content Include="Views\Staff_Table_Reservation\GetAllTable_Reservation_ListBYIDs.cshtml" />
+    <Content Include="Views\Staff_Table_Reservation\UpdateAllTable_Reservation_ListBYIDs.cshtml" />
+    <Content Include="Views\Staff_Table_Reservation\DeleteAllTable_Reservation_ListBYIDs.cshtml" />
+    <Content Include="Views\Staff_Registration\DeleteAllStaff_ListBYIDs.cshtml" />
+    <Content Include="Views\Delete_Staff_Registration\GetAllStaff_List.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1218</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1218/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

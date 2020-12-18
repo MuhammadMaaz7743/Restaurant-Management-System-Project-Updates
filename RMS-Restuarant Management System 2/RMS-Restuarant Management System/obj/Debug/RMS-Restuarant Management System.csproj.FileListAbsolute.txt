@@ -1,0 +1,36 @@
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\RMS-Restuarant Management System\RMS-Restuarant Management System\bin\RMS-Restuarant Management System.dll.config
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\RMS-Restuarant Management System\RMS-Restuarant Management System\bin\RMS-Restuarant Management System.dll
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\RMS-Restuarant Management System\RMS-Restuarant Management System\bin\RMS-Restuarant Management System.pdb
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\RMS-Restuarant Management System\RMS-Restuarant Management System\bin\System.Web.Helpers.dll
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\RMS-Restuarant Management System\RMS-Restuarant Management System\bin\System.Web.Mvc.dll
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\RMS-Restuarant Management System\RMS-Restuarant Management System\bin\System.Web.Razor.dll
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\RMS-Restuarant Management System\RMS-Restuarant Management System\bin\System.Web.Webpages.Deployment.dll
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\RMS-Restuarant Management System\RMS-Restuarant Management System\bin\System.Web.Webpages.dll
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\RMS-Restuarant Management System\RMS-Restuarant Management System\bin\System.Web.Webpages.Razor.dll
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\RMS-Restuarant Management System\RMS-Restuarant Management System\bin\System.Web.Razor.xml
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\RMS-Restuarant Management System\RMS-Restuarant Management System\bin\System.Web.Webpages.xml
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\RMS-Restuarant Management System\RMS-Restuarant Management System\bin\System.Web.Webpages.Deployment.xml
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\RMS-Restuarant Management System\RMS-Restuarant Management System\bin\System.Web.Webpages.Razor.xml
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\RMS-Restuarant Management System\RMS-Restuarant Management System\bin\System.Web.Helpers.xml
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\RMS-Restuarant Management System\RMS-Restuarant Management System\bin\System.Web.Mvc.xml
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\RMS-Restuarant Management System\RMS-Restuarant Management System\obj\Debug\RMS-Restuarant Management System.csprojResolveAssemblyReference.cache
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\RMS-Restuarant Management System\RMS-Restuarant Management System\obj\Debug\RMS-Restuarant Management System.dll
+c:\users\muhammad maaz\documents\visual studio 2013\Projects\RMS-Restuarant Management System\RMS-Restuarant Management System\obj\Debug\RMS-Restuarant Management System.pdb
+D:\All Work's\Database Management System\Restaurant Management System Project Updates\RMS-Restuarant Management System 2\RMS-Restuarant Management System\bin\RMS-Restuarant Management System.dll.config
+D:\All Work's\Database Management System\Restaurant Management System Project Updates\RMS-Restuarant Management System 2\RMS-Restuarant Management System\bin\RMS-Restuarant Management System.dll
+D:\All Work's\Database Management System\Restaurant Management System Project Updates\RMS-Restuarant Management System 2\RMS-Restuarant Management System\bin\RMS-Restuarant Management System.pdb
+D:\All Work's\Database Management System\Restaurant Management System Project Updates\RMS-Restuarant Management System 2\RMS-Restuarant Management System\bin\System.Web.Helpers.dll
+D:\All Work's\Database Management System\Restaurant Management System Project Updates\RMS-Restuarant Management System 2\RMS-Restuarant Management System\bin\System.Web.Mvc.dll
+D:\All Work's\Database Management System\Restaurant Management System Project Updates\RMS-Restuarant Management System 2\RMS-Restuarant Management System\bin\System.Web.Razor.dll
+D:\All Work's\Database Management System\Restaurant Management System Project Updates\RMS-Restuarant Management System 2\RMS-Restuarant Management System\bin\System.Web.Webpages.Deployment.dll
+D:\All Work's\Database Management System\Restaurant Management System Project Updates\RMS-Restuarant Management System 2\RMS-Restuarant Management System\bin\System.Web.Webpages.dll
+D:\All Work's\Database Management System\Restaurant Management System Project Updates\RMS-Restuarant Management System 2\RMS-Restuarant Management System\bin\System.Web.Webpages.Razor.dll
+D:\All Work's\Database Management System\Restaurant Management System Project Updates\RMS-Restuarant Management System 2\RMS-Restuarant Management System\bin\System.Web.Razor.xml
+D:\All Work's\Database Management System\Restaurant Management System Project Updates\RMS-Restuarant Management System 2\RMS-Restuarant Management System\bin\System.Web.Webpages.xml
+D:\All Work's\Database Management System\Restaurant Management System Project Updates\RMS-Restuarant Management System 2\RMS-Restuarant Management System\bin\System.Web.Webpages.Deployment.xml
+D:\All Work's\Database Management System\Restaurant Management System Project Updates\RMS-Restuarant Management System 2\RMS-Restuarant Management System\bin\System.Web.Webpages.Razor.xml
+D:\All Work's\Database Management System\Restaurant Management System Project Updates\RMS-Restuarant Management System 2\RMS-Restuarant Management System\bin\System.Web.Helpers.xml
+D:\All Work's\Database Management System\Restaurant Management System Project Updates\RMS-Restuarant Management System 2\RMS-Restuarant Management System\bin\System.Web.Mvc.xml
+D:\All Work's\Database Management System\Restaurant Management System Project Updates\RMS-Restuarant Management System 2\RMS-Restuarant Management System\obj\Debug\RMS-Restuarant Management System.csprojResolveAssemblyReference.cache
+D:\All Work's\Database Management System\Restaurant Management System Project Updates\RMS-Restuarant Management System 2\RMS-Restuarant Management System\obj\Debug\RMS-Restuarant Management System.dll
+D:\All Work's\Database Management System\Restaurant Management System Project Updates\RMS-Restuarant Management System 2\RMS-Restuarant Management System\obj\Debug\RMS-Restuarant Management System.pdb

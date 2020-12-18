@@ -1,0 +1,889 @@
+﻿@model Final_Restaurant_Management_System_RMS.Models.Deal_Module
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>restaurant management system</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fullscreen Background Image Slideshow with CSS3 - A Css-only fullscreen background image slideshow" />
+    <meta name="keywords" content="css3, css-only, fullscreen, background, slideshow, images, content" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="http://www.iconarchive.com/download/i17948/icons-land/points-of-interest/Restaurant-Blue.ico">
+    <script>
+        /* Modernizr 2.0.6 (Custom Build) | MIT & BSD
+* Build: http://www.modernizr.com/download/#-cssanimations-iepp-cssclasses-testprop-testallprops-domprefixes-load
+*/
+        ; window.Modernizr = function (a, b, c) { function A(a, b) { var c = a.charAt(0).toUpperCase() + a.substr(1), d = (a + " " + n.join(c + " ") + c).split(" "); return z(d, b) } function z(a, b) { for (var d in a) if (k[a[d]] !== c) return b == "pfx" ? a[d] : !0; return !1 } function y(a, b) { return !!~("" + a).indexOf(b) } function x(a, b) { return typeof a === b } function w(a, b) { return v(prefixes.join(a + ";") + (b || "")) } function v(a) { k.cssText = a } var d = "2.0.6", e = {}, f = !0, g = b.documentElement, h = b.head || b.getElementsByTagName("head")[0], i = "modernizr", j = b.createElement(i), k = j.style, l, m = Object.prototype.toString, n = "Webkit Moz O ms Khtml".split(" "), o = {}, p = {}, q = {}, r = [], s, t = {}.hasOwnProperty, u; !x(t, c) && !x(t.call, c) ? u = function (a, b) { return t.call(a, b) } : u = function (a, b) { return b in a && x(a.constructor.prototype[b], c) }, o.cssanimations = function () { return A("animationName") }; for (var B in o) u(o, B) && (s = B.toLowerCase(), e[s] = o[B](), r.push((e[s] ? "" : "no-") + s)); v(""), j = l = null, a.attachEvent && function () { var a = b.createElement("div"); a.innerHTML = "<elem></elem>"; return a.childNodes.length !== 1 }() && function (a, b) { function s(a) { var b = -1; while (++b < g) a.createElement(f[b]) } a.iepp = a.iepp || {}; var d = a.iepp, e = d.html5elements || "abbr|article|aside|audio|canvas|datalist|details|figcaption|figure|footer|header|hgroup|mark|meter|nav|output|progress|section|summary|time|video", f = e.split("|"), g = f.length, h = new RegExp("(^|\\s)(" + e + ")", "gi"), i = new RegExp("<(/*)(" + e + ")", "gi"), j = /^\s*[\{\}]\s*$/, k = new RegExp("(^|[^\\n]*?\\s)(" + e + ")([^\\n]*)({[\\n\\w\\W]*?})", "gi"), l = b.createDocumentFragment(), m = b.documentElement, n = m.firstChild, o = b.createElement("body"), p = b.createElement("style"), q = /print|all/, r; d.getCSS = function (a, b) { if (a + "" === c) return ""; var e = -1, f = a.length, g, h = []; while (++e < f) { g = a[e]; if (g.disabled) continue; b = g.media || b, q.test(b) && h.push(d.getCSS(g.imports, b), g.cssText), b = "all" } return h.join("") }, d.parseCSS = function (a) { var b = [], c; while ((c = k.exec(a)) != null) b.push(((j.exec(c[1]) ? "\n" : c[1]) + c[2] + c[3]).replace(h, "$1.iepp_$2") + c[4]); return b.join("\n") }, d.writeHTML = function () { var a = -1; r = r || b.body; while (++a < g) { var c = b.getElementsByTagName(f[a]), d = c.length, e = -1; while (++e < d) c[e].className.indexOf("iepp_") < 0 && (c[e].className += " iepp_" + f[a]) } l.appendChild(r), m.appendChild(o), o.className = r.className, o.id = r.id, o.innerHTML = r.innerHTML.replace(i, "<$1font") }, d._beforePrint = function () { p.styleSheet.cssText = d.parseCSS(d.getCSS(b.styleSheets, "all")), d.writeHTML() }, d.restoreHTML = function () { o.innerHTML = "", m.removeChild(o), m.appendChild(r) }, d._afterPrint = function () { d.restoreHTML(), p.styleSheet.cssText = "" }, s(b), s(l); d.disablePP || (n.insertBefore(p, n.firstChild), p.media = "print", p.className = "iepp-printshim", a.attachEvent("onbeforeprint", d._beforePrint), a.attachEvent("onafterprint", d._afterPrint)) }(a, b), e._version = d, e._domPrefixes = n, e.testProp = function (a) { return z([a]) }, e.testAllProps = A, g.className = g.className.replace(/\bno-js\b/, "") + (f ? " js " + r.join(" ") : ""); return e }(this, this.document), function (a, b, c) { function k(a) { return !a || a == "loaded" || a == "complete" } function j() { var a = 1, b = -1; while (p.length - ++b) if (p[b].s && !(a = p[b].r)) break; a && g() } function i(a) { var c = b.createElement("script"), d; c.src = a.s, c.onreadystatechange = c.onload = function () { !d && k(c.readyState) && (d = 1, j(), c.onload = c.onreadystatechange = null) }, m(function () { d || (d = 1, j()) }, H.errorTimeout), a.e ? c.onload() : n.parentNode.insertBefore(c, n) } function h(a) { var c = b.createElement("link"), d; c.href = a.s, c.rel = "stylesheet", c.type = "text/css"; if (!a.e && (w || r)) { var e = function (a) { m(function () { if (!d) try { a.sheet.cssRules.length ? (d = 1, j()) : e(a) } catch (b) { b.code == 1e3 || b.message == "security" || b.message == "denied" ? (d = 1, m(function () { j() }, 0)) : e(a) } }, 0) }; e(c) } else c.onload = function () { d || (d = 1, m(function () { j() }, 0)) }, a.e && c.onload(); m(function () { d || (d = 1, j()) }, H.errorTimeout), !a.e && n.parentNode.insertBefore(c, n) } function g() { var a = p.shift(); q = 1, a ? a.t ? m(function () { a.t == "c" ? h(a) : i(a) }, 0) : (a(), j()) : q = 0 } function f(a, c, d, e, f, h) { function i() { !o && k(l.readyState) && (r.r = o = 1, !q && j(), l.onload = l.onreadystatechange = null, m(function () { u.removeChild(l) }, 0)) } var l = b.createElement(a), o = 0, r = { t: d, s: c, e: h }; l.src = l.data = c, !s && (l.style.display = "none"), l.width = l.height = "0", a != "object" && (l.type = d), l.onload = l.onreadystatechange = i, a == "img" ? l.onerror = i : a == "script" && (l.onerror = function () { r.e = r.r = 1, g() }), p.splice(e, 0, r), u.insertBefore(l, s ? null : n), m(function () { o || (u.removeChild(l), r.r = r.e = o = 1, j()) }, H.errorTimeout) } function e(a, b, c) { var d = b == "c" ? z : y; q = 0, b = b || "j", C(a) ? f(d, a, b, this.i++, l, c) : (p.splice(this.i++, 0, a), p.length == 1 && g()); return this } function d() { var a = H; a.loader = { load: e, i: 0 }; return a } var l = b.documentElement, m = a.setTimeout, n = b.getElementsByTagName("script")[0], o = {}.toString, p = [], q = 0, r = "MozAppearance" in l.style, s = r && !!b.createRange().compareNode, t = r && !s, u = s ? l : n.parentNode, v = a.opera && o.call(a.opera) == "[object Opera]", w = "webkitAppearance" in l.style, x = w && "async" in b.createElement("script"), y = r ? "object" : v || x ? "img" : "script", z = w ? "img" : y, A = Array.isArray || function (a) { return o.call(a) == "[object Array]" }, B = function (a) { return Object(a) === a }, C = function (a) { return typeof a == "string" }, D = function (a) { return o.call(a) == "[object Function]" }, E = [], F = {}, G, H; H = function (a) { function f(a) { var b = a.split("!"), c = E.length, d = b.pop(), e = b.length, f = { url: d, origUrl: d, prefixes: b }, g, h; for (h = 0; h < e; h++) g = F[b[h]], g && (f = g(f)); for (h = 0; h < c; h++) f = E[h](f); return f } function e(a, b, e, g, h) { var i = f(a), j = i.autoCallback; if (!i.bypass) { b && (b = D(b) ? b : b[a] || b[g] || b[a.split("/").pop().split("?")[0]]); if (i.instead) return i.instead(a, b, e, g, h); e.load(i.url, i.forceCSS || !i.forceJS && /css$/.test(i.url) ? "c" : c, i.noexec), (D(b) || D(j)) && e.load(function () { d(), b && b(i.origUrl, h, g), j && j(i.origUrl, h, g) }) } } function b(a, b) { function c(a) { if (C(a)) e(a, h, b, 0, d); else if (B(a)) for (i in a) a.hasOwnProperty(i) && e(a[i], h, b, i, d) } var d = !!a.test, f = d ? a.yep : a.nope, g = a.load || a.both, h = a.callback, i; c(f), c(g), a.complete && b.load(a.complete) } var g, h, i = this.yepnope.loader; if (C(a)) e(a, 0, i, 0); else if (A(a)) for (g = 0; g < a.length; g++) h = a[g], C(h) ? e(h, 0, i, 0) : A(h) ? H(h) : B(h) && b(h, i); else B(a) && b(a, i) }, H.addPrefix = function (a, b) { F[a] = b }, H.addFilter = function (a) { E.push(a) }, H.errorTimeout = 1e4, b.readyState == null && b.addEventListener && (b.readyState = "loading", b.addEventListener("DOMContentLoaded", G = function () { b.removeEventListener("DOMContentLoaded", G, 0), b.readyState = "complete" }, 0)), a.yepnope = d() }(this, this.document), Modernizr.load = function () { yepnope.apply(window, [].slice.call(arguments, 0)) };
+    </script>
+
+    @if (ViewBag.Message != null)
+    {
+        <script type="text/javascript">
+            window.onload = function () {
+                alert("@ViewBag.Message");
+            };
+        </script>
+    }
+    <style>
+        #marquee2 {
+            display: block;
+            color: ActiveBorder;
+            margin-top: 52%;
+            font-size: 20px;
+            font-family: Algerian;
+        }
+
+        @@font-face {
+            font-family: 'BebasNeueRegular';
+            src: url('fonts/BebasNeue-webfont.eot');
+            src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/BebasNeue-webfont.woff') format('woff'), url('fonts/BebasNeue-webfont.ttf') format('truetype'), url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+        /* CSS reset */
+        body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        fieldset, img {
+            border: 0;
+        }
+
+        input {
+            border: 1px solid #b0b0b0;
+            padding: 3px 5px 4px;
+            color: #979797;
+            width: 190px;
+        }
+
+        address, caption, cite, code, dfn, th, var {
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        ol, ul {
+            list-style: none;
+        }
+
+        caption, th {
+            text-align: left;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-size: 100%;
+            font-weight: normal;
+        }
+
+        q:before, q:after {
+            content: '';
+        }
+
+        abbr, acronym {
+            border: 0;
+        }
+        /* General Demo Style */
+        body {
+            font-family: Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+            background: #000;
+            font-weight: 400;
+            font-size: 15px;
+            color: #aa3e03;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+
+        .ie7 body {
+            overflow: hidden;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+        }
+
+        .clr {
+            clear: both;
+        }
+
+        .container > header {
+            padding: 30px 30px 10px 20px;
+            margin: 0px 20px 10px 20px;
+            position: relative;
+            display: block;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+            text-align: left;
+        }
+
+            .container > header h1 {
+                font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+                font-size: 35px;
+                line-height: 35px;
+                position: relative;
+                font-weight: 400;
+                color: #fff;
+                text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+                padding: 0px 0px 5px 0px;
+            }
+
+                .container > header h1 span {
+                }
+
+            .container > header h2, p.info {
+                font-size: 16px;
+                font-style: italic;
+                color: #f8f8f8;
+                text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+            }
+        /* Header Style */
+        .codrops-top {
+            font-family: Arial, sans-serif;
+            line-height: 24px;
+            font-size: 11px;
+            width: 100%;
+            background: #000;
+            opacity: 0.9;
+            text-transform: uppercase;
+            z-index: 9999;
+            position: relative;
+            -moz-box-shadow: 1px 0px 2px #000;
+            -webkit-box-shadow: 1px 0px 2px #000;
+            box-shadow: 1px 0px 2px #000;
+        }
+
+            .codrops-top a {
+                padding: 0px 10px;
+                letter-spacing: 1px;
+                color: #ddd;
+                display: block;
+                float: left;
+            }
+
+                .codrops-top a:hover {
+                    color: #fff;
+                }
+
+            .codrops-top span.right {
+                float: right;
+            }
+
+                .codrops-top span.right a {
+                    float: none;
+                    display: inline;
+                }
+
+        p.codrops-demos {
+            display: block;
+            padding: 15px 0px;
+        }
+
+            p.codrops-demos a,
+            p.codrops-demos a.current-demo,
+            p.codrops-demos a.current-demo:hover {
+                display: inline-block;
+                border: 1px solid #6d0019;
+                padding: 4px 10px 3px;
+                font-size: 13px;
+                line-height: 18px;
+                margin: 2px 3px;
+                font-weight: 800;
+                -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+                -moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+                box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+                color: #fff;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;
+                background: #a90329;
+                background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a90329), color-stop(44%,#8f0222), color-stop(100%,#6d0019));
+                background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%);
+                background: -o-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%);
+                background: -ms-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%);
+                background: linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%);
+            }
+
+                p.codrops-demos a:hover {
+                    background: #6d0019;
+                }
+
+                p.codrops-demos a:active {
+                    background: #6d0019;
+                    background: -moz-linear-gradient(top, #6d0019 0%, #8f0222 56%, #a90329 100%);
+                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6d0019), color-stop(56%,#8f0222), color-stop(100%,#a90329));
+                    background: -webkit-linear-gradient(top, #6d0019 0%,#8f0222 56%,#a90329 100%);
+                    background: -o-linear-gradient(top, #6d0019 0%,#8f0222 56%,#a90329 100%);
+                    background: -ms-linear-gradient(top, #6d0019 0%,#8f0222 56%,#a90329 100%);
+                    background: linear-gradient(top, #6d0019 0%,#8f0222 56%,#a90329 100%);
+                    -webkit-box-shadow: 0px 1px 1px rgba(255,255,255,0.9);
+                    -moz-box-shadow: 0px 1px 1px rgba(255,255,255,0.9);
+                    box-shadow: 0px 1px 1px rgba(255,255,255,0.9);
+                }
+
+                p.codrops-demos a.current-demo,
+                p.codrops-demos a.current-demo:hover {
+                    color: #A5727D;
+                    background: #6d0019;
+                }
+        /* Media Queries */
+        @@media screen and (max-width: 767px) {
+            .container > header {
+                text-align: center;
+            }
+
+            p.codrops-demos {
+                position: relative;
+                top: auto;
+                left: auto;
+            }
+        }
+
+        .cb-slideshow,
+        .cb-slideshow:after {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: 0;
+        }
+
+            .cb-slideshow:after {
+                content: '';
+                background: transparent url(C:\Users\Muhammad Maaz\Downloads\images\pattern.png) repeat top left;
+            }
+
+            .cb-slideshow li span {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                color: transparent;
+                background-size: cover;
+                background-position: 50% 50%;
+                background-repeat: none;
+                opacity: 0;
+                z-index: 0;
+                -webkit-backface-visibility: hidden;
+                -webkit-animation: imageAnimation 36s linear infinite 0s;
+                -moz-animation: imageAnimation 36s linear infinite 0s;
+                -o-animation: imageAnimation 36s linear infinite 0s;
+                -ms-animation: imageAnimation 36s linear infinite 0s;
+                animation: imageAnimation 36s linear infinite 0s;
+            }
+
+            .cb-slideshow li div {
+                z-index: 1000;
+                position: absolute;
+                bottom: 30px;
+                left: 0px;
+                width: 100%;
+                text-align: center;
+                opacity: 0;
+                color: #fff;
+                -webkit-animation: titleAnimation 36s linear infinite 0s;
+                -moz-animation: titleAnimation 36s linear infinite 0s;
+                -o-animation: titleAnimation 36s linear infinite 0s;
+                -ms-animation: titleAnimation 36s linear infinite 0s;
+                animation: titleAnimation 36s linear infinite 0s;
+            }
+
+                .cb-slideshow li div h3 {
+                    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+                    font-size: 240px;
+                    padding: 0;
+                    line-height: 200px;
+                }
+
+            .cb-slideshow li:nth-child(1) span {
+                background-image: url("../Images/1.jpg");
+            }
+
+            .cb-slideshow li:nth-child(2) span {
+                background-image: url("../Images/2.jpg");
+                -webkit-animation-delay: 6s;
+                -moz-animation-delay: 6s;
+                -o-animation-delay: 6s;
+                -ms-animation-delay: 6s;
+                animation-delay: 6s;
+            }
+
+            .cb-slideshow li:nth-child(3) span {
+                background-image: url("../Images/3.jpg");
+                -webkit-animation-delay: 12s;
+                -moz-animation-delay: 12s;
+                -o-animation-delay: 12s;
+                -ms-animation-delay: 12s;
+                animation-delay: 12s;
+            }
+
+            .cb-slideshow li:nth-child(4) span {
+                background-image: url("../Images/4.jpg");
+                -webkit-animation-delay: 18s;
+                -moz-animation-delay: 18s;
+                -o-animation-delay: 18s;
+                -ms-animation-delay: 18s;
+                animation-delay: 18s;
+            }
+
+            .cb-slideshow li:nth-child(5) span {
+                background-image: url("../Images/5.jpg");
+                -webkit-animation-delay: 24s;
+                -moz-animation-delay: 24s;
+                -o-animation-delay: 24s;
+                -ms-animation-delay: 24s;
+                animation-delay: 24s;
+            }
+
+            .cb-slideshow li:nth-child(6) span {
+                background-image: url("../Images/6.jpg");
+                -webkit-animation-delay: 30s;
+                -moz-animation-delay: 30s;
+                -o-animation-delay: 30s;
+                -ms-animation-delay: 30s;
+                animation-delay: 30s;
+            }
+
+            .cb-slideshow li:nth-child(7) span {
+                background-image: url("../Images/7.jpg");
+                -webkit-animation-delay: 36s;
+                -moz-animation-delay: 36s;
+                -o-animation-delay: 36s;
+                -ms-animation-delay: 36s;
+                animation-delay: 36s;
+            }
+
+            .cb-slideshow li:nth-child(2) div {
+                -webkit-animation-delay: 6s;
+                -moz-animation-delay: 6s;
+                -o-animation-delay: 6s;
+                -ms-animation-delay: 6s;
+                animation-delay: 6s;
+            }
+
+            .cb-slideshow li:nth-child(3) div {
+                -webkit-animation-delay: 12s;
+                -moz-animation-delay: 12s;
+                -o-animation-delay: 12s;
+                -ms-animation-delay: 12s;
+                animation-delay: 12s;
+            }
+
+            .cb-slideshow li:nth-child(4) div {
+                -webkit-animation-delay: 18s;
+                -moz-animation-delay: 18s;
+                -o-animation-delay: 18s;
+                -ms-animation-delay: 18s;
+                animation-delay: 18s;
+            }
+
+            .cb-slideshow li:nth-child(5) div {
+                -webkit-animation-delay: 24s;
+                -moz-animation-delay: 24s;
+                -o-animation-delay: 24s;
+                -ms-animation-delay: 24s;
+                animation-delay: 24s;
+            }
+
+            .cb-slideshow li:nth-child(6) div {
+                -webkit-animation-delay: 30s;
+                -moz-animation-delay: 30s;
+                -o-animation-delay: 30s;
+                -ms-animation-delay: 30s;
+                animation-delay: 30s;
+            }
+
+            .cb-slideshow li:nth-child(7) div {
+                -webkit-animation-delay: 36s;
+                -moz-animation-delay: 36s;
+                -o-animation-delay: 36s;
+                -ms-animation-delay: 36s;
+                animation-delay: 36s;
+            }
+        /* Animation for the slideshow images */
+        @@-webkit-keyframes imageAnimation {
+            0% {
+                opacity: 0;
+                -webkit-animation-timing-function: ease-in;
+            }
+
+            8% {
+                opacity: 1;
+                -webkit-animation-timing-function: ease-out;
+            }
+
+            17% {
+                opacity: 1;
+            }
+
+            25% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @@-moz-keyframes imageAnimation {
+            0% {
+                opacity: 0;
+                -moz-animation-timing-function: ease-in;
+            }
+
+            8% {
+                opacity: 1;
+                -moz-animation-timing-function: ease-out;
+            }
+
+            17% {
+                opacity: 1;
+            }
+
+            25% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @@-o-keyframes imageAnimation {
+            0% {
+                opacity: 0;
+                -o-animation-timing-function: ease-in;
+            }
+
+            8% {
+                opacity: 1;
+                -o-animation-timing-function: ease-out;
+            }
+
+            17% {
+                opacity: 1;
+            }
+
+            25% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @@-ms-keyframes imageAnimation {
+            0% {
+                opacity: 0;
+                -ms-animation-timing-function: ease-in;
+            }
+
+            8% {
+                opacity: 1;
+                -ms-animation-timing-function: ease-out;
+            }
+
+            17% {
+                opacity: 1;
+            }
+
+            25% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @@keyframes imageAnimation {
+            0% {
+                opacity: 0;
+                animation-timing-function: ease-in;
+            }
+
+            8% {
+                opacity: 1;
+                animation-timing-function: ease-out;
+            }
+
+            17% {
+                opacity: 1;
+            }
+
+            25% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+        /* Animation for the title */
+        @@-webkit-keyframes titleAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            8% {
+                opacity: 1;
+            }
+
+            17% {
+                opacity: 1;
+            }
+
+            19% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @@-moz-keyframes titleAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            8% {
+                opacity: 1;
+            }
+
+            17% {
+                opacity: 1;
+            }
+
+            19% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @@-o-keyframes titleAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            8% {
+                opacity: 1;
+            }
+
+            17% {
+                opacity: 1;
+            }
+
+            19% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @@-ms-keyframes titleAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            8% {
+                opacity: 1;
+            }
+
+            17% {
+                opacity: 1;
+            }
+
+            19% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @@keyframes titleAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            8% {
+                opacity: 1;
+            }
+
+            17% {
+                opacity: 1;
+            }
+
+            19% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+        /* Show at least something when animations not supported */
+        .no-cssanimations .cb-slideshow li span {
+            opacity: 1;
+        }
+
+        @@media screen and (max-width: 1140px) {
+            .cb-slideshow li div h3 {
+                font-size: 140px;
+            }
+        }
+
+        @@media screen and (max-width: 600px) {
+            .cb-slideshow li div h3 {
+                font-size: 80px;
+            }
+        }
+
+
+
+        body {
+            margin: 0;
+            color: #6a6f8c;
+            font: 600 16px/18px 'Open Sans',sans-serif;
+        }
+
+        *, :after, :before {
+            box-sizing: border-box;
+        }
+
+        .clearfix:after, .clearfix:before {
+            content: '';
+            display: table;
+        }
+
+        .clearfix:after {
+            clear: both;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .login-wrap {
+            width: 100%;
+            margin: auto;
+            max-width: 525px;
+            min-height: 670px;
+            position: relative;
+            box-shadow: 0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+        }
+
+        .login-html {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            padding: 90px 70px 50px 70px;
+            background: rgba(8,0,0,0.6);
+        }
+
+            .login-html .sign-in-htm,
+            .login-html .sign-up-htm {
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                position: absolute;
+                -webkit-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                -webkit-transition: all .4s linear;
+                transition: all .4s linear;
+            }
+
+            .login-html .sign-in,
+            .login-html .sign-up,
+            .login-form .group .check {
+                display: none;
+            }
+
+            .login-html .tab,
+            .login-form .group .label,
+            .login-form .group .button {
+                text-transform: uppercase;
+            }
+
+            .login-html .tab {
+                font-size: 22px;
+                margin-right: 15px;
+                padding-bottom: 5px;
+                margin: 0 15px 10px 0;
+                display: inline-block;
+                border-bottom: 2px solid transparent;
+            }
+
+            .login-html .sign-in:checked + .tab,
+            .login-html .sign-up:checked + .tab {
+                color: #fff;
+                border-color: #1161ee;
+            }
+
+        .control-labelcol-md-2 {
+            color: palegreen;
+            font-family: 'Berlin Sans FB';
+            font-size: x-large;
+            position: absolute;
+            margin-top: 20px;
+        }
+
+        .col-md-10 {
+            font-family: 'Berlin Sans FB';
+            margin-left: 195px;
+        }
+
+        #btn {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 30px 30px;
+            width: 150px;
+            margin-left: 120px;
+            margin-top: 30px;
+        }
+
+            #btn:hover {
+                background-color: white;
+                color: black;
+                border: 2px solid #4CAF50;
+            }
+
+        .link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .form-horizontal {
+            color: palegreen;
+            font-size: x-large;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width" />
+    <title>AdminLogin</title>
+</head>
+<body id="page">
+    <ul class="cb-slideshow">
+        <li><span>Image 01</span><div><h3>SOCIAL</h3></div></li>
+        <li><span>Image 02</span><div><h3>ENTHUSIASTIC</h3></div></li>
+        <li><span>Image 03</span><div><h3>RESPONSIBLE</h3></div></li>
+        <li><span>Image 04</span><div><h3>VIBRANT</h3></div></li>
+        <li><span>Image 05</span><div><h3>INTELLIGENT</h3></div></li>
+        <li><span>Image 06</span><div><h3>COURTEOUS</h3></div></li>
+        <li><span>Image 07</span><div><h3>ENGAGED</h3></div></li>
+    </ul>
+
+    <div class="login-wrap">
+        <div class="login-html">
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-horizontal">
+                    <center><h4>Insert_Deal_Module</h4></center>
+                    <hr />
+                    @Html.ValidationSummary(true)
+
+                    <div class="form-group">
+                        <br />
+                        @Html.LabelFor(model => model.Deal_ID, new { @class = "control-labelcol-md-2" })<br />
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(model => model.Deal_ID, new { disabled = "disabled" })
+                            @Html.ValidationMessageFor(model => model.Deal_ID)<br />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <br />
+                        @Html.LabelFor(model => model.Deal_Name, new { @class = "control-labelcol-md-2" })<br />
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Deal_Name)
+                            @Html.ValidationMessageFor(model => model.Deal_Name)<br />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <br />
+                        @Html.LabelFor(model => model.Food_Name, new { @class = "control-labelcol-md-2" })<br />
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Food_Name)
+                            @Html.ValidationMessageFor(model => model.Food_Name)<br />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <br />
+                        @Html.LabelFor(model => model.Food_Category, new { @class = "control-labelcol-md-2" })<br />
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Food_Category)
+                            @Html.ValidationMessageFor(model => model.Food_Category)<br />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <br />
+                        @Html.LabelFor(model => model.Deal_Price, new { @class = "control-labelcol-md-2" })<br />
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Deal_Price)
+                            @Html.ValidationMessageFor(model => model.Deal_Price)<br />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2col-md-10">
+                            <input id="btn" type="submit" value="Insert" class="btn btn-default" />
+                        </div>
+                    </div>
+                </div>
+            }
+            <div class="link">
+                @Html.ActionLink("Back to List", "GetAllDeal_Module_List", null, new { style = "color:yellow" })
+            </div><hr />
+        </div>
+    </div>
+</body>
+</html>

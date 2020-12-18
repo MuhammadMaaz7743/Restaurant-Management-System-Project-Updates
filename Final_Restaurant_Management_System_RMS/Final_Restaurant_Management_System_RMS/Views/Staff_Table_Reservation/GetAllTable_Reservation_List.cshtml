@@ -1,0 +1,238 @@
+﻿@model IEnumerable<Final_Restaurant_Management_System_RMS.Models.Staff_Table_Reservation>
+
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1">
+
+    <title>GetAllTable_Reservation_List</title>
+
+    <link rel="icon" href="~/Knight/img/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="~/Knight/img/Logo.ico" type="img/x-icon">
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
+
+    <link href="~/Knight/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="~/Knight/css/style.css" rel="stylesheet" type="text/css">
+    <link href="~/Knight/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="~/Knight/css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="~/Knight/css/animate.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="~/Knight/js/jquery.1.8.3.min.js"></script>
+    <script type="text/javascript" src="~/Knight/js/bootstrap.js"></script>
+    <script type="text/javascript" src="~/Knight/js/jquery-scrolltofixed.js"></script>
+    <script type="text/javascript" src="~/Knight/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="~/Knight/js/jquery.isotope.js"></script>
+    <script type="text/javascript" src="~/Knight/js/wow.js"></script>
+    <script type="text/javascript" src="~/Knight/js/classie.js"></script>
+    <script src="contactform/contactform.js"></script>
+
+    <!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+    <link rel="stylesheet" type="text/css" href="~/MainSlider/engine1/style.css" />
+    <script type="text/javascript" src="~/MainSlider/engine1/jquery.js"></script>
+    <!-- End WOWSlider.com HEAD section -->
+
+    <script type="text/javascript">
+        window.onload = window.history.forward(0);  //calling function on window onload
+    </script>
+    <style>
+        td, th {
+            border: 1px solid black;
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: green;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+            #myBtn:hover {
+                background-color: white;
+                color: green;
+            }
+
+        .table {
+            color: black;
+        }
+    </style>
+</head>
+@*#d7d7d7*@
+<body style="background-color: #d7d7d7; margin: 0">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <nav class="main-nav-outer" id="test">
+        <!--main-nav-start-->
+        <div class="container">
+            <ul class="main-nav">
+                @*<li><a href="#header">Home</a></li>*@
+                @*<li><a href="#Portfolio">Images</a></li>*@
+                |
+                <li>@Html.ActionLink("Home", "StaffMainPage", "Login")</li> |
+                <li>@Html.ActionLink("Menu_Module", "GetAllMenu_Module_List", "Staff_Menu_Module")</li> |
+                <li>@Html.ActionLink("Order_List", "GetAllOrder_List", "Staff_Order_List")</li> |
+                <li class="small-logo"><a href="#header"><img src="~/Knight/img/small-logo.png" alt=""></a></li> |
+                <li>@Html.ActionLink("Deal_Module", "GetAllDeal_Module_List", "Staff_Deal_Module")</li> |
+                <li>@Html.ActionLink("Vegetable_Stock", "GetAllVegetable_Stock_List", "Staff_Vegetable_Stock")</li> |
+                <br />
+                |
+                <li>@Html.ActionLink("Logout", "Category", "Login", null, new { style = "color:Red" })</li> |
+            </ul>
+            <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
+        </div>
+    </nav><!--main-nav-end-->
+    <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+    <div id="wowslider-container1">
+        <div class="ws_images">
+            <ul>
+                <li><img src="~/MainSlider/data1/images/3.jpg" alt="3" title="3" id="wows1_0" /></li>
+                <li><img src="~/MainSlider/data1/images/sectionbg1.jpg" alt="section-bg1" title="section-bg1" id="wows1_1" /></li>
+                <li><img src="~/MainSlider/data1/images/96.jpg" alt="96" title="96" id="wows1_2" /></li>
+                <li><img src="~/MainSlider/data1/images/97.jpg" alt="97" title="97" id="wows1_3" /></li>
+                <li><a href="http://wowslider.com/vi"><img src="~/MainSlider/data1/images/6.jpg" alt="bootstrap slider" title="6" id="wows1_4" /></a></li>
+                <li><img src="~/MainSlider/data1/images/1.jpg" alt="1" title="1" id="wows1_5" /></li>
+            </ul>
+        </div>
+        <div class="ws_bullets">
+            <div>
+                <a href="#" title="3"><span><img src="~/MainSlider/data1/tooltips/3.jpg" alt="3" />1</span></a>
+                <a href="#" title="section-bg1"><span><img src="~/MainSlider/data1/tooltips/sectionbg1.jpg" alt="section-bg1" />2</span></a>
+                <a href="#" title="96"><span><img src="~/MainSlider/data1/tooltips/96.jpg" alt="96" />3</span></a>
+                <a href="#" title="97"><span><img src="~/MainSlider/data1/tooltips/97.jpg" alt="97" />4</span></a>
+                <a href="#" title="6"><span><img src="~/MainSlider/data1/tooltips/6.jpg" alt="6" />5</span></a>
+                <a href="#" title="1"><span><img src="~/MainSlider/data1/tooltips/1.jpg" alt="1" />6</span></a>
+            </div>
+        </div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">bootstrap slider</a> by WOWSlider.com v8.6</div>
+        <div class="ws_shadow"></div>
+    </div>
+    <script type="text/javascript" src="~/MainSlider/engine1/wowslider.js"></script>
+    <script type="text/javascript" src="~/MainSlider/engine1/script.js"></script>
+    <!-- End WOWSlider.com BODY section -->
+
+    <section class="main-section paddind" id="Portfolio">
+        <!--main-section-start-->
+        <div class="container">
+            <ul class="main-nav">
+                <p>
+                    <hr />
+                    |   @Html.ActionLink("Insert New", "InsertTable_Reservation", null, new { style = "color:Red" })   |<hr />
+                </p>
+            </ul>
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Reservation_ID)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Customer_ID)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Table_Number)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Number_Of_People)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Timing_Checkin)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Branch)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Email)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Phone_Number)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.CNIC)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Date)
+                    </th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Reservation_ID)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Customer_ID)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Table_Number)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Number_Of_People)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Timing_Checkin)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Branch)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Phone_Number)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CNIC)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Date)
+                        </td>
+                        <td>
+                            | @Html.ActionLink("Select", "GetAllTable_Reservation_ListBYIDs", new { C_ID = item.Reservation_ID/* id=item.PrimaryKey */ }, new { onclick = "return confirm('Are You Sure To Select This Id');" }) |
+                            @Html.ActionLink("Update", "UpdateAllTable_Reservation_ListBYIDs", new { C_ID = item.Reservation_ID/* id=item.PrimaryKey */ }, new { onclick = "return confirm('Are You Sure To Select This Id');" }) |
+                            @Html.ActionLink("Delete", "DeleteAllTable_Reservation_ListBYIDs", new { C_ID = item.Reservation_ID/* id=item.PrimaryKey */ }, new { onclick = "return confirm('Are You Sure To Select This Id');" }) |
+                        </td>
+                    </tr>
+                }
+            </table>
+            <script>
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function () { scrollFunction() };
+
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        document.getElementById("myBtn").style.display = "block";
+                    } else {
+                        document.getElementById("myBtn").style.display = "none";
+                    }
+                }
+
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+            </script>
+        </div>
+    </section>
+    <div id="marquee2"><marquee behavior="scroll" onmouseover="this.stop()" onmouseout="this.start()">"COPYRIGHT-&copy;-MUHAMMAD MAAZ"</marquee></div>
+</body>
+</html>

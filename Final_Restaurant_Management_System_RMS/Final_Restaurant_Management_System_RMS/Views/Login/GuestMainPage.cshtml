@@ -1,0 +1,350 @@
+﻿@{
+    Layout = null;
+}
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1">
+
+    <title>GuestMainPage</title>
+    <link rel="icon" href="~/Knight/img/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="~/Knight/img/Logo.ico" type="img/x-icon">
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
+
+    <link href="~/Knight/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="~/Knight/css/style.css" rel="stylesheet" type="text/css">
+    <link href="~/Knight/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="~/Knight/css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="~/Knight/css/animate.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="~/Knight/js/jquery.1.8.3.min.js"></script>
+    <script type="text/javascript" src="~/Knight/js/bootstrap.js"></script>
+    <script type="text/javascript" src="~/Knight/js/jquery-scrolltofixed.js"></script>
+    <script type="text/javascript" src="~/Knight/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="~/Knight/js/jquery.isotope.js"></script>
+    <script type="text/javascript" src="~/Knight/js/wow.js"></script>
+    <script type="text/javascript" src="~/Knight/js/classie.js"></script>
+    <script src="contactform/contactform.js"></script>
+
+    <script type="text/javascript">
+        window.onload = window.history.forward(0);  //calling function on window onload
+    </script>
+
+    <style>
+        #Logo {
+            color: yellow;
+        }
+
+        #Contact {
+            text-align: center;
+        }
+    </style>
+
+    <style>
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: green;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+            #myBtn:hover {
+                background-color: white;
+                color: green;
+            }
+    </style>
+
+</head>
+<body style="background-color: #d7d7d7; margin: 0">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <header class="header" id="header">
+        <!--header-start-->
+        <div class="container">
+            <figure class="logo animated fadeInDown delay-07s">
+                <a href="#"><img src="~/Knight/img/logo66.png" alt=""></a>
+            </figure>
+            <h1 class="animated fadeInDown delay-07s"><div id="Logo">Welcome To Kolachi Restaurant</h1>
+        </div>
+        <ul class="we-create animated fadeInUp delay-1s">
+            <li><u> Vision:</u> We invision our company to be the premier Pakistani restaurant in the country & promoting Pakistani food in the world.</li>
+            <br />
+            <li><u> Mission:</u> To serve quality, healthy and delicious food to serve.</li>
+        </ul>
+        <a class="link animated fadeInUp delay-1s servicelink" href="#Portfolio">Get Started</a>
+        </div>
+    </header><!--header-end-->
+
+    <nav class="main-nav-outer" id="test">
+        <!--main-nav-start-->
+        <div class="container">
+            <ul class="main-nav">
+                @*<li><a href="#header">Home</a></li>*@
+                @*<li><a href="#Portfolio">Images</a></li>*@
+                <li>@Html.ActionLink("Menu_Module", "GetGuestMenu_Module_List", "Guest_Menu_List")</li> |
+                <li>@Html.ActionLink("Deal_Module", "Deal_Module_List", "Guest_Deal_List")</li> |
+                <li class="small-logo"><a href="#header"><img src="~/Knight/img/small-logo.png" alt=""></a></li> |
+                <li>@Html.ActionLink("Table_Reservation", "GetAllTable_ReservationList", "Guest_Table_Reservation_List")</li> |
+                <li>@Html.ActionLink("Logout", "Category", "Login", null, new { style = "color:Yellow" })</li> |
+            </ul>
+            <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
+        </div>
+    </nav><!--main-nav-end-->
+
+    <section class="main-section paddind" id="Portfolio">
+        <!--main-section-start-->
+        <div class="container">
+            <h2>Images's</h2>
+            <h6>Images That Can Refresh Your Mind.</h6>
+            <div class="portfolioFilter">
+                <ul class="Portfolio-nav wow fadeIn delay-02s">
+                    <li><a href="#" data-filter="*" class="current">All</a></li>
+                    <li><a href="#" data-filter=".branding">Branding</a></li>
+                    <li><a href="#" data-filter=".webdesign">Web design</a></li>
+                    <li><a href="#" data-filter=".printdesign">Print design</a></li>
+                    <li><a href="#" data-filter=".photography">Photography</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="portfolioContainer wow fadeInUp delay-04s">
+            <div class=" Portfolio-box printdesign">
+                <a href="#"><img src="~/Images/93.jpg" alt=""></a>
+                <h3>Foto Album</h3>
+                <p>Print Design</p>
+            </div>
+            <div class="Portfolio-box webdesign">
+                <a href="#"><img src="~/Images/94.jpg" alt=""></a>
+                <h3>Luca Theme</h3>
+                <p>Web Design</p>
+            </div>
+            <div class=" Portfolio-box branding">
+                <a href="#"><img src="~/Images/95.jpg" alt=""></a>
+                <h3>Uni Sans</h3>
+                <p>Branding</p>
+            </div>
+            <div class=" Portfolio-box photography">
+                <a href="#"><img src="~/Images/96.jpg" alt=""></a>
+                <h3>Vinyl Record</h3>
+                <p>Photography</p>
+            </div>
+            <div class=" Portfolio-box branding">
+                <a href="#"><img src="~/Images/97.jpg" alt=""></a>
+                <h3>Hipster</h3>
+                <p>Branding</p>
+            </div>
+            <div class=" Portfolio-box photography">
+                <a href="#"><img src="~/Images/98.jpg" alt=""></a>
+                <h3>Windmills</h3>
+                <p>Photography</p>
+            </div>
+        </div>
+    </section><!--main-section-end-->
+
+
+    <section class="main-section client-part" id="client">
+        <!--main-section client-part-start-->
+        <div class="container">
+            <b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="client-part-haead wow fadeInDown delay-05">
+                        Restaurant Management System<br />
+                        Kolachi Restaurant
+                    </p>
+                </div>
+            </div>
+            <ul class="client wow fadeIn delay-05s"></ul>
+        </div>
+    </section><!--main-section client-part-end-->
+    <div class="c-logo-part">
+        <!--c-logo-part-start-->
+        <div class="container">
+            <ul>
+                <li><a href="https://www.envato.com" target="_blank"><img src="~/Knight/img/c-liogo1.png" alt=""></a></li>
+                <li><a href="https://www.WordPress.com" target="_blank"><img src="~/Knight/img/c-liogo2.png" alt=""></a></li>
+                <li><a href="https://www.dribbble.com" target="_blank"><img src="~/Knight/img/c-liogo3.png" alt=""></a></li>
+                <li><a href="https://www.behance.net/" target="_blank"><img src="~/Knight/img/c-liogo4.png" alt=""></a></li>
+                <li><a href="https://www.Twitter.com" target="_blank"><img src="~/Knight/img/c-liogo5.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div><!--c-logo-part-end-->
+
+    <section class="business-talking">
+        <!--business-talking-start-->
+        <div class="container">
+            <h2>Let’s Talk Business.</h2>
+        </div>
+    </section><!--business-talking-end-->
+    <div class="container">
+        <section class="main-section contact" id="contact">
+            <div id="Contact">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-7 wow fadeInLeft">
+                        <div class="contact-info-box address clearfix">
+                            <h3><i class=" icon-map-marker"></i>Address:</h3>
+                            <span>Abdul Sattar Edhi Avenue, Karachi.</span>
+                        </div>
+                        <div class="contact-info-box phone clearfix">
+                            <h3><i class="fa-phone"></i>Phone:</h3>
+                            <span>(021) 111 111 001</span>
+                        </div>
+                        <div class="contact-info-box email clearfix">
+                            <h3><i class="fa-pencil"></i>email:</h3>
+                            <span>Restaurant@Kolachi.com</span>
+                        </div>
+                        <div class="contact-info-box hours clearfix">
+                            <h3><i class="fa-clock-o"></i>Hours:</h3>
+                            <span><strong>Monday - Thursday:</strong> 1pm - 12am<br><strong>Friday:</strong> 2:30pm - 12:30am<br><strong>Saturday - Sunday:</strong> 1pm - 2am</span>
+                        </div>
+                        <ul class="social-link">
+                            <li class="twitter"><a href="https://www.Twitter.com/" target="_blank"><i class="fa-twitter"></i></a></li>
+                            <li class="facebook"><a href="https://www.facebook.com/" target="_blank"><i class="fa-facebook"></i></a></li>
+                            <li class="pinterest"><a href="https://www.Pinterest.com/" target="_blank"><i class="fa-pinterest"></i></a></li>
+                            <li class="gplus"><a href="https://www.Gmail.com/" target="_blank"><i class="fa-google-plus"></i></a></li>
+                            <li class="dribbble"><a href="https://www.Dribbble.com/" target="_blank"><i class="fa-dribbble"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo"><a href="#"><img src="~/Knight/img/footer-logo.png" alt=""></a></div>
+            <span class="copyright">&copy; Muhammad Maaz. All Rights Reserved</span>
+            <div class="credits">
+                <!--
+                    All the links in the footer should remain intact.
+                    You can delete the links only if you purchased the pro version.
+                    Licensing information: https://bootstrapmade.com/license/
+                    Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Knight
+                -->
+                <a href="https://bootstrapmade.com/free-business-bootstrap-themes-website-templates/">Business Bootstrap Themes</a> by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript">
+        $(document).ready(function (e) {
+            $('#test').scrollToFixed();
+            $('.res-nav_click').click(function () {
+                $('.main-nav').slideToggle();
+                return false
+
+            });
+
+        });
+    </script>
+
+    <script>
+        wow = new WOW(
+          {
+              animateClass: 'animated',
+              offset: 100
+          }
+        );
+        wow.init();
+    </script>
+
+
+    <script type="text/javascript">
+        $(window).load(function () {
+
+            $('.main-nav li a, .servicelink').bind('click', function (event) {
+                var $anchor = $(this);
+
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top - 102
+                }, 1500, 'easeInOutExpo');
+                /*
+                if you don't want to use the easing effects:
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1000);
+                */
+                event.preventDefault();
+            });
+        })
+    </script>
+
+    <script type="text/javascript">
+
+        $(window).load(function () {
+
+
+            var $container = $('.portfolioContainer'),
+                $body = $('body'),
+                colW = 375,
+                columns = null;
+
+
+            $container.isotope({
+                // disable window resizing
+                resizable: true,
+                masonry: {
+                    columnWidth: colW
+                }
+            });
+
+            $(window).smartresize(function () {
+                // check if columns has changed
+                var currentColumns = Math.floor(($body.width() - 30) / colW);
+                if (currentColumns !== columns) {
+                    // set new column count
+                    columns = currentColumns;
+                    // apply width to container manually, then trigger relayout
+                    $container.width(columns * colW)
+                      .isotope('reLayout');
+                }
+
+            }).smartresize(); // trigger resize to set container width
+            $('.portfolioFilter a').click(function () {
+                $('.portfolioFilter .current').removeClass('current');
+                $(this).addClass('current');
+
+                var selector = $(this).attr('data-filter');
+                $container.isotope({
+
+                    filter: selector,
+                });
+                return false;
+            });
+
+        });
+
+    </script>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+</html>
